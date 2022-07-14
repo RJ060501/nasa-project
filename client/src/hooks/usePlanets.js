@@ -10,6 +10,7 @@ function usePlanets() {
     savePlanets(fetchedPlanets);
   }, []);
 
+  // A function that will always call getPlanets when the app first loads, since getPlanets is used above right away.
   useEffect(() => {
     getPlanets();
   }, [getPlanets]);
